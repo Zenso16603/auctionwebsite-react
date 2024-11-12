@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auction-details-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(149, 213, 255);
+    height: 43rem;
+    
+}
+
+.auction {
+    width :100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: #1e88e5;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.auction h1{
+    margin-left: 2rem;
+}
+ .things{
+    height: 40rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.auction-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    flex: 0.2;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #1e88e5;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(149, 213, 255);
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover, .tab.active {
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+
+.live-auction-details {
+    background-color: #fff;
+    height: 25rem;
+    width: 80rem;
+    margin-left: 2.5rem;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.auction-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.auction-image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auction-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.live-auction-details h2 {
+    font-size: 2rem;
+}
+
+.live-auction-details p {
+    font-weight: 600;
+}
+
+.bid-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bid-form h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.inputbid input{
+    padding: 0.5rem;
+    width: 14rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+}
+
+
+/* General Button Styling */
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #1e88e5;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #0d47a1;
+  transform: translateY(0);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Button Styling for Bid Buttons */
+.bid button {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: #26a69a;
+  border-radius: 8px;
+}
+
+.bid button:hover {
+  background-color: #00796b;
+}
+
+.bid button:active {
+  background-color: #004d40;
+}
+
+
+  
+  thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  tbody tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody td {
+    color: #333;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 12px;
+  }
+  
+  table th,
+  table td {
+    text-align: left;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+    thead {
+      display: none;
+    }
+    tbody td {
+      display: block;
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    tbody td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    tbody tr {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
+  
+  /* Modal Text Styling */
+.modal-content {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.modal-content h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1e88e5;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
