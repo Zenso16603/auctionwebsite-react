@@ -132,9 +132,11 @@ const Auction = () => {
                         <br />
                         Special Handling: {requirement.special_handling}
                       </p>
-                      <button className="bid" id="" onClick={() => openBidModal(requirement)}>
-                        Place Bid
-                      </button>
+                      <div className="bid">
+                        <button onClick={() => openBidModal(requirement)}>
+                          Place Bid
+                        </button>
+                      </div>
                     </div>
                   </div>
                 );
